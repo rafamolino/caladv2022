@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    background: url("https://www.tuexperto.com/wp-content/uploads/2020/12/zoom-navidad-01.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+section{
+    width: 350px;
+    color: white;
+    background: red;
+    border-radius: 20px;
+    padding: 1rem;
+    opacity: 0.9;
+    
+}
+
+.accesorios{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+
+}
+.cancionnavid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.calendario {
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    gap: 4rem;
+   
+
+}
+#my-canvas{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+}
+#my-canvas.active{
+    
+    visibility: visible;
+}
+.carta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.carta img {
+    width: 250px;
+   
+
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    
+}
+
+.normales {
+    align-content: center;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+
+
+.especial img{
+    box-shadow: 0px 0px 15px 15px white;
+
+}
+
+.dias img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+    width: 70px;
+    margin-left: 50%;
+}
+
+.normales img:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    box-shadow: 0px 0px 15px 15px yellow;
+}
+.especial img:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    box-shadow: 0px 0px 15px 15px white;
+}
