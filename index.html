@@ -29,47 +29,50 @@
     </script>
 
     <section>
-        <p>
+        <p id="gola">
             <span id="days"></span> días / <span id="hours"></span> horas / <span id="minutes"></span> minutos / <span
                 id="seconds"></span> segundos
         </p>
     </section>
+    
 
 
     <div class="calendario">
 
         <div class="dias">
             <div class="normales">
-                <img class="uno" src="./img/1.PNG" alt="1">
-                <img src="./img/2.PNG" alt="1">
-                <img src="./img/3.PNG" alt="1">
-                <img src="./img/4.PNG" alt="1">
-                <img src="./img/5.PNG" alt="1">
-                <img src="./img/6.PNG" alt="1">
-                <img src="./img/7.PNG" alt="1">
-                <img src="./img/8.PNG" alt="1">
-                <img src="./img/9.PNG" alt="1">
-                <img src="./img/10.PNG" alt="1">
-                <img src="./img/11.PNG" alt="1">
-                <img src="./img/12.PNG" alt="1">
-                <img src="./img/13.PNG" alt="1">
-                <img src="./img/14.PNG" alt="1">
-                <img src="./img/15.PNG" alt="1">
-                <img src="./img/16.PNG" alt="1">
-                <img src="./img/17.PNG" alt="1">
-                <img src="./img/18.PNG" alt="1">
-                <img src="./img/19.PNG" alt="1">
-                <img src="./img/20.PNG" alt="1">
-                <img src="./img/21.PNG" alt="1">
-                <img src="./img/22.PNG" alt="1">
-                <img src="./img/23.PNG" alt="1">
-                <img class="boton" src="./img/24.PNG" alt="1">
+                <img id="img1" src="./img/1.PNG" alt="1" onclick="window.location.href='#popup2'">
+                <img id="img2" src="./img/2.PNG" alt="1">
+                <img id="img3" src="./img/3.PNG" alt="1">
+                <img id="img4" src="./img/4.PNG" alt="1">
+                <img id="img5" src="./img/5.PNG" alt="1">
+                <img id="img6" src="./img/6.PNG" alt="1">
+                <img id="img7" src="./img/7.PNG" alt="1">
+                <img id="img8" src="./img/8.PNG" alt="1">
+                <img id="img9" src="./img/9.PNG" alt="1">
+                <img id="img10" src="./img/10.PNG" alt="1">
+                <img id="img11" src="./img/11.PNG" alt="1">
+                <img id="img12" src="./img/12.PNG" alt="1">
+                <img id="img13" src="./img/13.PNG" alt="1">
+                <img id="img14" src="./img/14.PNG" alt="1">
+                <img id="img15" src="./img/15.PNG" alt="1">
+                <img id="img16" src="./img/16.PNG" alt="1">
+                <img id="img17" src="./img/17.PNG" alt="1">
+                <img id="img18" src="./img/18.PNG" alt="1">
+                <img id="img19" src="./img/19.PNG" alt="1">
+                <img id="img20" src="./img/20.PNG" alt="1">
+                <img id="img21" src="./img/21.PNG" alt="1">
+                <img id="img22" src="./img/22.PNG" alt="1">
+                <img id="img23" src="./img/23.PNG" alt="1">
+                <img id="img24" class="boton" src="./img/24.PNG" alt="1">
             </div>
             <div class="especial">
-                <img class="adri" src="./img/25.PNG" alt="1">
+                <img id="img25" src="./img/25.PNG" alt="1">
 
 
             </div>
+
+           
 
 
 
@@ -80,17 +83,17 @@
             <img src="./img/foto.jpg" alt="1">
 
             <div class="accesorios">
-                <button class="btninfo"onclick="window.location.href='#popup1'"> <span>Información</span></button>
+                <button class="btninfo" onclick="window.location.href='#popup1'"> <span>Información</span></button>
                 <div class="cancionnavid">
                     <button class="repromusic" onclick="PlaySound('cancion')"></button>
                     <button class="pausemusic" onclick="PauseSound('cancion')"></button>
 
                 </div>
-                
+
             </div>
             <script src="index.js"></script>
 
-            <audio id="cancion"  preload="auto" src="img/cancion_navidad.mp3" type="audio/wav">
+            <audio id="cancion" preload="auto" src="img/cancion_navidad.mp3" type="audio/wav">
             </audio>
             <!-- 
             <script>
@@ -132,6 +135,21 @@
 
         </div>
     </div>
+
+    <div id="popup2" class="overlay">
+        <div class="card">
+            <a class="close" href="#">&times;</a>
+            <img src="./img/imgd1.jpg" alt="1">
+            <p>Retrato hecho a mano para usar como fondo o lo que quieras &#128147</p>
+
+            
+
+        </div>
+    </div>
+
+    
+
+    
     <!--<canvas id="my-canvas"></canvas>
 
     <script>

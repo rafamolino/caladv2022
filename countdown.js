@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
     const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
 
+    
+   
+    
+
     //===
     // FUNCTIONS
     //===
@@ -32,17 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
         // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
 
+        
         // Render
         SPAN_DAYS.textContent = REMAINING_DAYS;
         SPAN_HOURS.textContent = REMAINING_HOURS;
         SPAN_MINUTES.textContent = REMAINING_MINUTES;
         SPAN_SECONDS.textContent = REMAINING_SECONDS;
-    }
 
+        
+    }
+    
     //===
     // INIT
     //===
     updateCountdown();
     // Refresh every second
     setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+
+
 });
+
