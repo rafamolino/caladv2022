@@ -86,11 +86,13 @@ section{
     box-shadow: 0px 0px 15px 15px white;
 
 }
-
-
-.dias img {
+#img2 ,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#img10,#img11,#img12,#img13,#img14,#img15,#img16,#img17,#img18,#img19,#img20,#img21,#img22,#img23,#img24,#img25 {
     filter: grayscale(100%);
 
+}
+
+.dias img {
+    
     border-radius: 20px;
     margin-bottom: 15px;
     width: 70px;
