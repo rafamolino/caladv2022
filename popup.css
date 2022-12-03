@@ -61,6 +61,41 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .card3 {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    width: 320px;
+    height: 550px;
+    background: url("./img/poema.png");
+    background-size:cover;
+    border: 2px solid #07ff07;
+    box-shadow: 2px 2px 15px #000000 inset;
+    text-align: center;
+    color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico';
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .card3 .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #07ff07;
+  }
+  .card3 .close:hover {
+    color: #06D85F;
+  }
   
   .card:hover {
     color: #07ff07;
