@@ -1,0 +1,170 @@
+body{
+align-items: center;
+margin-left: 20%;
+margin-top: 5%;
+    display: flex;
+    background: url("https://www.tuexperto.com/wp-content/uploads/2020/12/zoom-navidad-01.jpg") no-repeat center center fixed;
+    background-size: cover;
+   gap:2%;
+}
+
+.extras{
+    padding: 2%;
+    display: flex;
+    background-color: red;
+    border-radius: 15px;
+    flex-direction: row-reverse;
+}
+#puzzle-container {
+
+    padding: 20px;
+    float: left;
+    margin: 30px 20px;
+
+}
+
+#puzzle-container div {
+
+    width: 100%;
+    margin: 0 auto;
+}
+/* estilo para cada cuadrado del rompecabezas */
+
+#puzzle-container .puzzleSquare {
+
+    height: 30px;
+    width: 30px;
+    text-transform: uppercase;
+    background-color: red;
+    border: 0;
+    font: 1em sans-serif;
+    
+}
+
+#puzzle-container button::-moz-focus-inner {
+    border: 0;
+}
+/* indica cuando se ha seleccionado un cuadrado */
+
+#puzzle-container .selected {
+    background-color: orange;
+}
+/* indica que el cuadrado es parte de una palabra que se ha encontrado */
+
+#puzzle-container .found {
+    background-color: blue;
+    color: white;
+}
+
+#puzzle-container .solved {
+    background-color: purple;
+    color: white;
+}
+/* indica que se han encontrado todas las palabras */
+
+#puzzle-container .complete {
+    background-color: green;
+}
+/**
+* Estilos para la lista de palabras
+*/
+
+#puzzle-words {
+    padding-top: 20px;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+}
+
+#puzzle-words ul {
+    list-style-type: none;
+}
+
+#puzzle-words li {
+    padding: 3px 0;
+    font: 1em sans-serif;
+}
+/*indica que la palabra ha sido encontrada */
+
+#puzzle-words .wordFound {
+    text-decoration: line-through;
+    color: black;
+    background-color: yellow;
+}
+/**
+*  Estilos para el botón
+*/
+
+#solve {
+    margin: 0 30px;
+}
+
+.button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 2px 2px 6px #c5c5c5,
+               -2px -2px 6px #ffffff;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+               inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: black;
+    border: 1px solid #009087;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  

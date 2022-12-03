@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sopadeletras.css">
+    <title>Wordfind game Javascript</title>
+</head>
+
+<body>
+    <!-- Add required markup -->
+    <div id="puzzle-container"></div>
+    <div class="extras">
+        <div class="palabras">
+            
+        </div>
+        <div id="puzzle-words"></div>
+        <div class="pistas">
+            <h1>Pistas</h1>
+
+            
+            <p> 1. Tu nombre</p>
+            <p>2. Mi nombre</p>
+            <p>3. Furbo</p>
+            <p>4. Ciudad 1</p>
+            <p>5. Ciudad 2</p>
+            <p>6. Ciudad 3</p>
+            <p>7. Lo que somos</p>
+            <p>8. Sentimiento 1</p>
+            <p>9. Sentimiento 2</p>
+            <p>10. Lo que eres</p>
+
+
+            <input type="button" id="solveBTN" class="button2" value="Resolver" />
+
+        </div>
+    </div>
+
+
+    <!-- Add dependencies -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="wordfind.js"></script>
+    <script src="wordfindgame.js"></script>
+    <!-- Add our logic -->
+    <script>
+        // An array with the words to show
+        var words = ['adriana', 'rafael', 'betis', 'sevilla', 'linares', 'granada', 'pareja', 'cariño', 'amor', 'preciosa'
+        ];
+
+        // Start a basic word game without customization !
+        var gamePuzzle = wordfindgame.create(words, '#puzzle-container', '#puzzle-words');
+
+        $("#solveBTN").click(function () {
+            // Solve the puzzle !
+            var result = wordfindgame.solve(gamePuzzle, words);
+            console.log(result);
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
