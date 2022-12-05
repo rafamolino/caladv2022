@@ -12,7 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
     <script src="jquery.snow.js"></script>
     <script src="node_modules/confetti-js/dist/index.min.js"></script>
-    <script src="countdown.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Calendario de Adviento</title>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -28,19 +31,19 @@
         });
     </script>
 
-    
-    
+
+
 
 
     <div class="calendario">
 
         <div class="dias">
             <div class="normales">
-                <img  src="./img/1.PNG" alt="1" onclick="window.location.href='#dia1'">
-                <img  src="./img/2.PNG" alt="1" onclick="window.location.href='#dia2'">
-                <img  src="./img/3.PNG" alt="1" onclick="window.location.href='#dia3'">
-                <img  src="./img/4.PNG" alt="1" onclick="window.location.href='sopadeletras.html'">
-                <img id="img" src="./img/5.PNG" alt="1">
+                <img src="./img/1.PNG" alt="1" onclick="window.location.href='#dia1'">
+                <img src="./img/2.PNG" alt="1" onclick="window.location.href='#dia2'">
+                <img src="./img/3.PNG" alt="1" onclick="window.location.href='#dia3'">
+                <img src="./img/4.PNG" alt="1" onclick="window.location.href='sopadeletras.html'">
+                <img src="./img/5.PNG" alt="1" onclick="window.location.href='#dia5'">
                 <img id="img" src="./img/6.PNG" alt="1">
                 <img id="img" src="./img/7.PNG" alt="1">
                 <img id="img" src="./img/8.PNG" alt="1">
@@ -67,7 +70,7 @@
 
             </div>
 
-           
+
 
 
 
@@ -90,27 +93,7 @@
 
             <audio id="cancion" preload="auto" src="img/cancion_navidad.mp3" type="audio/wav">
             </audio>
-            <!-- 
-            <script>
-                var miCheckbox = document.getElementById('toggle');
-                var cancion = document.getElementById('cancion');
 
-
-                miCheckbox.addEventListener('click', function () {
-                    if (miCheckbox.checked) {
-                        cancion.play();
-
-                    } else {
-
-                        cancion.pause()
-
-                    }
-                });
-
-
-            </script>
-            
--->
         </div>
 
 
@@ -151,28 +134,25 @@
             <a class="close" href="#">&times;</a>
         </div>
     </div>
+    <div id="dia5" class="overlay">
+        <div class="card">
+            <a class="close" href="#">&times;</a>
+
+            <P>Te propongo un reto... Para saber que reto es, deberás antes hacer unas cosas:</P>
+            <p>- Suma todos los digitos de nuestra fecha </br>- Dividelo entre todas las veces que fuimos al fútbol
+                juntos </br>- Vuelve a dividirlo por el mes de tu cumple </br>- Multiplicalo por el día de mi cumple
+            </p>
+
+            <div class="reto1">
+                <input id="num" type="text" placeholder="Coloca aquí el número">
+                <button id="btn_dia5" class="btndia5" onclick="comprobarResultado()"> LISTO! </button>
+                <p>Entra <a href="https://www.rapidtables.org/convert/number/hex-to-ascii.html">aquí</a> cuando tengas el código</p>
+            </div>
+
+        </div>
+    </div>
     
 
-    
-    <!--<canvas id="my-canvas"></canvas>
-
-    <script>
-        let imagen = document.querySelector('.boton');
-        let cerrar = document.querySelector('.adri');
-
-        let confeti = document.querySelector("#my-canvas");
-        imagen.onclick= function(){
-            confeti.classList.add('active');
-        }
-        cerrar.onclick= function(){
-            confeti.classList.remove('active');
-        }
-
-
-        var confettiSettings = { target: 'my-canvas' };
-        var confetti = new ConfettiGenerator(confettiSettings);
-        confetti.render();
-    </script>-->
 
 </body>
 
