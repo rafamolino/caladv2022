@@ -33,3 +33,26 @@ function comprobarResultado() {
     }
 
 }
+
+function comprobarLibro() {
+    var input = document.getElementById("paginas").value
+    if (input == 391) {
+        Swal.fire({
+            title: 'Premio!',
+            imageUrl: 'img/dia6.png',
+            imageWidth: 400,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            confirmButtonText: 'Aceptar'
+
+          })
+    } else {
+        Swal.fire({
+            title: 'Error!',
+            text: 'Creo que ese libro no era...',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        })
+    }
+
+}
