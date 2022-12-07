@@ -56,3 +56,26 @@ function comprobarLibro() {
     }
 
 }
+
+function comprobarObjetos() {
+    var input = document.getElementById("cantidad").value
+    if (input == 22) {
+        Swal.fire({
+            title: 'Premio!',
+            imageUrl: 'img/dia8.png',
+            imageWidth: 450,
+            imageHeight: 250,
+            imageAlt: 'Custom image',
+            confirmButtonText: 'Aceptar'
+
+          })
+    } else {
+        Swal.fire({
+            title: 'Error!',
+            text: 'Creo que ese libro no era...',
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+        })
+    }
+
+}
