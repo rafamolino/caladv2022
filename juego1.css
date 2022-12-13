@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url("https://www.tuexperto.com/wp-content/uploads/2020/12/zoom-navidad-01.jpg") no-repeat center center fixed;
+    background-size: cover;}
+
+.contenedor{
+    margin: auto;
+    width: 900px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+.titulo{
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 2%;
+}
+
+.opciones p{
+    background: red;
+    display: initial;
+    padding: 12px;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+p.p1{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    width: 100px;
+}
+p.p1:hover{
+    background: rgb(207, 62, 62);
+    cursor: pointer;
+}
+
+p.p2{
+    position: absolute;
+    top: 400px;
+    left: 750px;
+    width: 100px;
+}
+p.p2:hover{
+    background: rgb(207, 62, 62);
+    cursor: pointer;
+}
+#si{
+    background: url("https://media4.giphy.com/media/XrlNdXmEyyRuyv5rd7/giphy.gif?cid=ecf05e47cblw2yh5clnryw0c1jbbiv0j8qtyrkhzrcok1o8c&rid=giphy.gif&ct=g");
+    background-size: cover;
+    left: 25%;
+    position: absolute;
+    top: 122px;
+    width: 550px;
+    height: 300px;
+    color: #ffffff;
+    padding: 50px;
+    display: none;
+}
