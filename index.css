@@ -111,3 +111,11 @@ section{
     flex-direction: column;
     gap: 20px;
 }
+
+#dia14 img{
+    width: 370px;
+}
+
+#dia14 div{
+    width: 380px;
+}
