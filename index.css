@@ -127,12 +127,15 @@ section{
 #dia16 div{
     height: 600px;
     width: 320px;
-    left: 800px;
+    left: 500px;
+    top:20px;
+
 }
 #dia17 div{
     height: 600px;
+    top:20px;
     width: 320px;
-    left: 800px;
+    left: 500px;
 }
 
 #dia18 img{
@@ -140,4 +143,20 @@ section{
 }
 #dia19 img{
     width: 300px;
+}
+#dia20 img{
+    width: 300px;
+}
+#dia21 img{
+    width: 300px;
+}
+#dia22 div{
+    width: 580px;
+    left: 400px;
+}
+#dia23 div{
+    top:20px;
+    height: 600px;
+    width: 320px;
+    left: 500px;
 }
